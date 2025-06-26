@@ -1,252 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./vars.css">
-  <link rel="stylesheet" href="./style.css">
-  <script src='https://cdn.tailwindcss.com/3.2.0' ></script>
-  <script src="./tailwind.config.js"></script>
-  <style>
-   a,
-   button,
-   input,
-   select,
-   h1,
-   h2,
-   h3,
-   h4,
-   h5,
-   * {
-       box-sizing: border-box;
-       margin: 0;
-       padding: 0;
-       border: none;
-       text-decoration: none;
-       background: none;
-   
-       -webkit-font-smoothing: antialiased;
-   }
-   
-   menu, ol, ul {
-       list-style-type: none;
-       margin: 0;
-       padding: 0;
-   }
-   </style>
-  <title>Document</title>
-</head>
-<body>
-  <div
-    class="bg-[#000000] pt-[11px] pr-3 pb-[11px] pl-3 w-[200px] h-[394px] relative overflow-hidden"
-  >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./input.css" />
+    <link rel="stylesheet" href="./output.css" />
+
+    <style>
+      a,
+      button,
+      input,
+      select,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: none;
+        text-decoration: none;
+        background: none;
+
+        -webkit-font-smoothing: antialiased;
+      }
+
+      menu,
+      ol,
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
     <div
-      class="p-2.5 flex flex-row gap-2.5 items-center justify-center absolute left-[11px] top-px"
+      class="bg-[#000000] pt-[11px] pr-3 pb-[11px] pl-3 w-[200px] h-[394px] relative overflow-hidden"
     >
       <div
-        class="text-[#ffffff] text-left font-['Inter-ExtraBold',_sans-serif] text-[10px] font-extrabold relative"
+        class="p-2.5 flex flex-row gap-2.5 items-center justify-center absolute left-[11px] top-px"
       >
-        Weekly Expenses Tracker
+        <div
+          class="text-[#ffffff] text-left font-['Inter-ExtraBold',_sans-serif] text-[10px] font-extrabold relative"
+        >
+          Weekly Expenses Tracker
+        </div>
       </div>
-    </div>
-    <img
-      class="rounded-none w-[45px] h-[9px] absolute left-[calc(50%_-_-34px)] top-11 overflow-visible"
-      src="rectangle-70.svg"
-    />
-    <div
-      class="text-[#ffffff] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[calc(50%_-_-52px)] top-[45px] w-[41px] h-2"
-    >
-      Clear
-    </div>
-    <div class="w-14 h-[17px] absolute left-7 top-[37px]">
+      <img
+        class="rounded-none w-[45px] h-[9px] absolute left-[calc(50%_-_-34px)] top-11 overflow-visible"
+        src="../images/rectangle-100.svg"
+      />
       <div
-        class="bg-[#ffffff] rounded-sm border-solid border-[rgba(0,0,0,0.25)] border w-[53px] h-[9px] absolute left-0 top-2"
+        class="text-[#ffffff] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[calc(50%_-_-52px)] top-[45px] w-[41px] h-2"
+      >
+        Clear
+      </div>
+      <div class="w-14 h-[17px] absolute left-7 top-[37px]">
+        <div
+          class="bg-[#ffffff] rounded-sm border-solid border-[rgba(0,0,0,0.25)] border w-[53px] h-[9px] absolute left-0 top-2"
+        ></div>
+        <div
+          class="text-[#9a9a9a] text-left font-['Inter-Regular',_sans-serif] text-[3px] font-normal absolute left-1 top-[11px] w-[52px]"
+        >
+          Number of categories
+        </div>
+      </div>
+      <div
+        class="bg-[#ffffff] rounded border-solid border-[rgba(0,0,0,0.25)] border w-[151px] h-[46px] absolute left-7 top-[101px]"
       ></div>
       <div
-        class="text-[#9a9a9a] text-left font-['Inter-Regular',_sans-serif] text-[3px] font-normal absolute left-1 top-[11px] w-[52px]"
-      >
-        Number of categories
-      </div>
-    </div>
-    <div
-      class="bg-[#ffffff] rounded border-solid border-[rgba(0,0,0,0.25)] border w-[151px] h-[46px] absolute left-7 top-[101px]"
-    ></div>
-    <div
-      class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[43px] h-0 absolute left-[122px] top-[102px]"
-      style="
-        margin-top: -1px;
-        transform-origin: 0 0;
-        transform: rotate(90deg) scale(1, 1);
-      "
-    ></div>
-    <div
-      class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[45px] h-0 absolute left-[122px] top-[102px]"
-      style="
-        margin-top: -1px;
-        transform-origin: 0 0;
-        transform: rotate(90deg) scale(1, 1);
-      "
-    ></div>
-    <div
-      class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[45px] h-0 absolute left-[152px] top-[102px]"
-      style="
-        margin-top: -1px;
-        transform-origin: 0 0;
-        transform: rotate(90deg) scale(1, 1);
-      "
-    ></div>
-    <div
-      class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[151px] h-0 absolute left-7 top-[118px]"
-      style="margin-top: -1px; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
-    ></div>
-    <div
-      class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[151px] h-0 absolute left-7 top-[134px]"
-      style="margin-top: -1px"
-    ></div>
-    <div
-      class="text-[#000000] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[38px] top-[106px] w-[69px] h-[5px]"
-    >
-      Category Name
-    </div>
-    <div
-      class="text-[#000000] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-32 top-[106px] w-[21px] h-[7px]"
-    >
-      Week 1
-    </div>
-    <div
-      class="text-[#000000] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[157px] top-[107px] w-[21px] h-[7px]"
-    >
-      Week 2
-    </div>
-    <div class="w-[103px] h-[47px] absolute left-[54px] top-[147px]">
-      <img
-        class="rounded-none w-[63px] h-3 absolute left-5 top-[-64px] overflow-visible"
-        src="rectangle-100.svg"
-      />
-      <img
-        class="rounded-none w-[79px] h-3 absolute left-3 top-[30px] overflow-visible"
-        src="rectangle-110.svg"
-      />
+        class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[43px] h-0 absolute left-[122px] top-[102px]"
+        style="
+          margin-top: -1px;
+          transform-origin: 0 0;
+          transform: rotate(90deg) scale(1, 1);
+        "
+      ></div>
       <div
-        class="text-[#ffffff] text-left font-['Inter-Medium',_sans-serif] text-[7px] font-medium absolute left-2 top-3.5 w-[103px] h-2.5"
+        class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[45px] h-0 absolute left-[122px] top-[102px]"
+        style="
+          margin-top: -1px;
+          transform-origin: 0 0;
+          transform: rotate(90deg) scale(1, 1);
+        "
+      ></div>
+      <div
+        class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[45px] h-0 absolute left-[152px] top-[102px]"
+        style="
+          margin-top: -1px;
+          transform-origin: 0 0;
+          transform: rotate(90deg) scale(1, 1);
+        "
+      ></div>
+      <div
+        class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[151px] h-0 absolute left-7 top-[118px]"
+        style="
+          margin-top: -1px;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        "
+      ></div>
+      <div
+        class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[151px] h-0 absolute left-7 top-[134px]"
+        style="margin-top: -1px"
+      ></div>
+      <div
+        class="text-[#000000] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[38px] top-[106px] w-[69px] h-[5px]"
       >
-        Expense Breakdown Table
+        Category Name
       </div>
       <div
-        class="text-[#ffffff] text-center font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[calc(50%_-_30.5px)] top-8 w-[53px] h-2"
+        class="text-[#000000] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-32 top-[106px] w-[21px] h-[7px]"
       >
-        Compare Expenses
+        Week 1
+      </div>
+      <div
+        class="text-[#000000] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[157px] top-[107px] w-[21px] h-[7px]"
+      >
+        Week 2
+      </div>
+      <div class="w-[103px] h-[47px] absolute left-[54px] top-[147px]">
+        <img
+          class="rounded-none w-[63px] h-3 absolute left-5 top-[-64px] overflow-visible"
+          src="../images/rectangle-100.svg"
+        />
+        <img
+          class="rounded-none w-[79px] h-3 absolute left-3 top-[30px] overflow-visible"
+          src="../images/rectangle-110.svg"
+        />
+        <div
+          class="text-[#ffffff] text-left font-['Inter-Medium',_sans-serif] text-[7px] font-medium absolute left-2 top-3.5 w-[103px] h-2.5"
+        >
+          Expense Breakdown Table
+        </div>
+        <div
+          class="text-[#ffffff] text-center font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[calc(50%_-_30.5px)] top-8 w-[53px] h-2"
+        >
+          Compare Expenses
+        </div>
+      </div>
+      <div
+        class="text-[#ffffff] text-center font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[calc(50%_-_21px)] top-[85px] w-[53px] h-2"
+      >
+        + Add Categories Row
+      </div>
+      <div
+        class="bg-[#ffffff] rounded border-solid border-[rgba(0,0,0,0.25)] border w-[151px] h-[90px] absolute left-7 top-[198px]"
+      ></div>
+      <div
+        class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[150px] h-0 absolute left-7 top-[213px]"
+        style="
+          margin-top: -1px;
+          transform-origin: 0 0;
+          transform: rotate(-0.382deg) scale(1, 1);
+        "
+      ></div>
+      <div
+        class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[150px] h-0 absolute left-7 top-[228px]"
+        style="
+          margin-top: -1px;
+          transform-origin: 0 0;
+          transform: rotate(-0.382deg) scale(1, 1);
+        "
+      ></div>
+      <div
+        class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[150px] h-0 absolute left-7 top-[243px]"
+        style="
+          margin-top: -1px;
+          transform-origin: 0 0;
+          transform: rotate(-0.382deg) scale(1, 1);
+        "
+      ></div>
+      <div
+        class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[150px] h-0 absolute left-[29px] top-[258px]"
+        style="
+          margin-top: -1px;
+          transform-origin: 0 0;
+          transform: rotate(-0.382deg) scale(1, 1);
+        "
+      ></div>
+      <div
+        class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[150px] h-0 absolute left-[29px] top-[275px]"
+        style="
+          margin-top: -1px;
+          transform-origin: 0 0;
+          transform: rotate(-0.382deg) scale(1, 1);
+        "
+      ></div>
+      <div
+        class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[44.5%] h-[0%] absolute right-[-5.5%] left-[61%] bottom-[49.49%] top-[50.51%]"
+        style="
+          margin-top: -1px;
+          transform-origin: 0 0;
+          transform: rotate(90deg) scale(1, 1);
+        "
+      ></div>
+      <div
+        class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[44.5%] h-[0%] absolute right-[8.5%] left-[47%] bottom-[49.49%] top-[50.51%]"
+        style="
+          margin-top: -1px;
+          transform-origin: 0 0;
+          transform: rotate(90deg) scale(1, 1);
+        "
+      ></div>
+      <div
+        class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[89px] h-0 absolute left-[152px] top-[199px]"
+        style="
+          margin-top: -1px;
+          transform-origin: 0 0;
+          transform: rotate(90deg) scale(1, 1);
+        "
+      ></div>
+      <div
+        class="text-[#000000] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[38px] top-[202px] w-[51px] h-[7px]"
+      >
+        Category
+      </div>
+      <div
+        class="text-[#000000] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[99px] top-[203px] w-6 h-[5px]"
+      >
+        Week 1
+      </div>
+      <div
+        class="text-[#000000] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[156px] top-[202px] w-[22px] h-[7px]"
+      >
+        Change
+      </div>
+      <div
+        class="text-[#000000] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[38px] top-[278px] w-[29px] h-2"
+      >
+        Total
+      </div>
+      <div
+        class="text-[#000000] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[100px] top-[215px] w-6 h-[5px]"
+      >
+        50
+      </div>
+      <div
+        class="text-[#000000] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[130px] top-[215px] w-6 h-[5px]"
+      >
+        50
+      </div>
+      <div
+        class="text-[#000000] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[130px] top-[203px] w-6 h-[5px]"
+      >
+        Week 2
       </div>
     </div>
-    <div
-      class="text-[#ffffff] text-center font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[calc(50%_-_21px)] top-[85px] w-[53px] h-2"
-    >
-      + Add Categories Row
-    </div>
-    <div
-      class="bg-[#ffffff] rounded border-solid border-[rgba(0,0,0,0.25)] border w-[151px] h-[90px] absolute left-7 top-[198px]"
-    ></div>
-    <div
-      class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[150px] h-0 absolute left-7 top-[213px]"
-      style="
-        margin-top: -1px;
-        transform-origin: 0 0;
-        transform: rotate(-0.382deg) scale(1, 1);
-      "
-    ></div>
-    <div
-      class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[150px] h-0 absolute left-7 top-[228px]"
-      style="
-        margin-top: -1px;
-        transform-origin: 0 0;
-        transform: rotate(-0.382deg) scale(1, 1);
-      "
-    ></div>
-    <div
-      class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[150px] h-0 absolute left-7 top-[243px]"
-      style="
-        margin-top: -1px;
-        transform-origin: 0 0;
-        transform: rotate(-0.382deg) scale(1, 1);
-      "
-    ></div>
-    <div
-      class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[150px] h-0 absolute left-[29px] top-[258px]"
-      style="
-        margin-top: -1px;
-        transform-origin: 0 0;
-        transform: rotate(-0.382deg) scale(1, 1);
-      "
-    ></div>
-    <div
-      class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[150px] h-0 absolute left-[29px] top-[275px]"
-      style="
-        margin-top: -1px;
-        transform-origin: 0 0;
-        transform: rotate(-0.382deg) scale(1, 1);
-      "
-    ></div>
-    <div
-      class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[44.5%] h-[0%] absolute right-[-5.5%] left-[61%] bottom-[49.49%] top-[50.51%]"
-      style="
-        margin-top: -1px;
-        transform-origin: 0 0;
-        transform: rotate(90deg) scale(1, 1);
-      "
-    ></div>
-    <div
-      class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[44.5%] h-[0%] absolute right-[8.5%] left-[47%] bottom-[49.49%] top-[50.51%]"
-      style="
-        margin-top: -1px;
-        transform-origin: 0 0;
-        transform: rotate(90deg) scale(1, 1);
-      "
-    ></div>
-    <div
-      class="border-solid border-[#9a9a9a] border-t border-r-[0] border-b-[0] border-l-[0] w-[89px] h-0 absolute left-[152px] top-[199px]"
-      style="
-        margin-top: -1px;
-        transform-origin: 0 0;
-        transform: rotate(90deg) scale(1, 1);
-      "
-    ></div>
-    <div
-      class="text-[#000000] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[38px] top-[202px] w-[51px] h-[7px]"
-    >
-      Category
-    </div>
-    <div
-      class="text-[#000000] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[99px] top-[203px] w-6 h-[5px]"
-    >
-      Week 1
-    </div>
-    <div
-      class="text-[#000000] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[156px] top-[202px] w-[22px] h-[7px]"
-    >
-      Change
-    </div>
-    <div
-      class="text-[#000000] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[38px] top-[278px] w-[29px] h-2"
-    >
-      Total
-    </div>
-    <div
-      class="text-[#000000] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[100px] top-[215px] w-6 h-[5px]"
-    >
-      50
-    </div>
-    <div
-      class="text-[#000000] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[130px] top-[215px] w-6 h-[5px]"
-    >
-      50
-    </div>
-    <div
-      class="text-[#000000] text-left font-['Inter-Regular',_sans-serif] text-[5px] font-normal absolute left-[130px] top-[203px] w-6 h-[5px]"
-    >
-      Week 2
-    </div>
-  </div>
-  
-</body>
+  </body>
 </html>
