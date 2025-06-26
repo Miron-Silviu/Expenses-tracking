@@ -10,5 +10,28 @@
     <script src="./tailwind.config.js"></script>
     <title>Document</title>
   </head>
-  <body></body>
+  <body class="bg-lime-200">
+    <div class="main_container m-1 bg-black">
+      <div class="container h-auto">
+        <header class="text-center h-auto">
+          <h1 class="text-white font-mono text-xl p-5">
+            Weekly Expense Tracker
+          </h1>
+        </header>
+      </div>
+      <div class="button_input_container my-10 mx-5 p-3 flex justify-between">
+        <input
+          type="number"
+          class="input_number rounded-md w-28 border-2 font-mono"
+          placeholder="Add Number"
+        />
+        <button
+          type="button"
+          class="clear_btn text-white border-2-yellow-500 b-2 px-4 rounded-md bg-yellow-500 font-mono"
+        >
+          Clear
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
