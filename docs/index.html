@@ -29,7 +29,7 @@
         />
         <button
           type="button"
-          class="clear_btn text-white border-2-yellow-500 b-2 px-4 rounded-md bg-yellow-500 font-mono"
+          class="clear_btn text-white border-2-yellow-500 b-2 px-4 rounded-md bg-yellow-500 font-mono xs:block"
         >
           Clear All
         </button>
@@ -42,9 +42,36 @@
         </button>
       </div>
 
-      <div class="table_container bg-red-600 mx-5">
-        <table>
-          <th></th>
+      <div
+        class="table_container mx-5 xs:block text-center flex justify-center"
+      >
+        <table class="table-auto bg-white border-gray-400 xs:block">
+          <thead>
+            <tr>
+              <th class="border border-gray-600 px-4 py2 font-mono">
+                Category Name
+              </th>
+              <th class="border border-gray-600 px-4 py2 font-mono">Week 1</th>
+              <th class="border border-gray-600 px-4 py2 font-mono">Week2</th>
+            </tr>
+          </thead>
+          <tbody class="border border-gray-600 px-4 py2">
+            <tr>
+              <td class="border border-gray-600 px-4 py2 font-mono">Text</td>
+              <td class="border border-gray-600 px-4 py2 font-mono">10</td>
+              <td class="border border-gray-600 px-4 py2 font-mono">1961</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-600 px-4 py2 font-mono">text</td>
+              <td class="border border-gray-600 px-4 py2 font-mono">10</td>
+              <td class="border border-gray-600 px-4 py2 font-mono">1972</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-600 px-4 py2 font-mono">Text</td>
+              <td class="border border-gray-600 px-4 py2 font-mono">10</td>
+              <td class="border border-gray-600 px-4 py2 font-mono">1975</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>
