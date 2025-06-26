@@ -8,35 +8,6 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.tailwindcss.com/3.2.0"></script>
     <script src="./tailwind.config.js"></script>
-    <style>
-      a,
-      button,
-      input,
-      select,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        border: none;
-        text-decoration: none;
-        background: none;
-
-        -webkit-font-smoothing: antialiased;
-      }
-
-      menu,
-      ol,
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
     <title>Document</title>
   </head>
   <body>
@@ -61,15 +32,11 @@
       >
         Clear
       </div>
-      <div class="w-14 h-[17px] absolute left-7 top-[37px]">
-        <div
-          class="bg-[#ffffff] rounded-sm border-solid border-[rgba(0,0,0,0.25)] border w-[53px] h-[9px] absolute left-0 top-2"
-        ></div>
-        <div
-          class="text-[#9a9a9a] text-left font-['Inter-Regular',_sans-serif] text-[3px] font-normal absolute left-1 top-[11px] w-[52px]"
-        >
-          Number of categories
-        </div>
+      <div class="w-14 h-[17px] absolute left-7 top-[37px] ">
+        <input type="number"
+          class="text-[0.40rem] outline-none bg-[#ffffff] absolute rounded-sm  w-[56px] h-[9px] top-2 placeholder:text-bg[#9a9a9a] placeholder:[font-size:0.30rem] placeholder:italic placeholder:text-center " placeholder="Add Number "   
+        ></input>
+
       </div>
       <div
         class="bg-[#ffffff] rounded border-solid border-[rgba(0,0,0,0.25)] border w-[151px] h-[46px] absolute left-7 top-[101px]"
