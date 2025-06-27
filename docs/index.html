@@ -4,15 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./vars.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./output.css" />
     <script src="https://cdn.tailwindcss.com/3.2.0"></script>
-    <script src="./tailwind.config.js"></script>
     <title>Document</title>
   </head>
   <body class="bg-lime-200">
-    <div class="main_container m-1 bg-black">
-      <div class="container h-auto">
+    <div class="main_container m-10 bg-black min-h-screen">
+      <div class="container h-auto text-center">
         <header class="text-center h-auto">
           <h1 class="text-white font-mono text-xl p-5">
             Weekly Expense Tracker
@@ -31,7 +29,7 @@
           type="button"
           class="clear_btn text-white border-2-yellow-500 b-2 px-4 rounded-md bg-yellow-500 font-mono xs:block"
         >
-          Clear All
+          Reset
         </button>
       </div>
       <div class="categories_row_button text-center mx-5 py-2">
@@ -40,6 +38,7 @@
         >
           + Add Categories Row
         </button>
+        <h2 class="text-white font-mono text-lg">Enter Categories Name</h2>
       </div>
 
       <div
@@ -48,28 +47,119 @@
         <table class="table-auto bg-white border-gray-400 xs:block">
           <thead>
             <tr>
-              <th class="border border-gray-600 px-4 py2 font-mono">
+              <th class="border border-gray-600 px-4 py2 font-mono text-sm">
                 Category Name
               </th>
-              <th class="border border-gray-600 px-4 py2 font-mono">Week 1</th>
-              <th class="border border-gray-600 px-4 py2 font-mono">Week2</th>
+              <th class="border border-gray-600 px-4 py2 font-mono text-sm">
+                Week 1
+              </th>
+              <th class="border border-gray-600 px-4 py2 font-mono text-sm">
+                Week2
+              </th>
             </tr>
           </thead>
-          <tbody class="border border-gray-600 px-4 py2">
+          <tbody class="border border-gray-600 px-4 py2 hidden">
             <tr>
-              <td class="border border-gray-600 px-4 py2 font-mono">Text</td>
-              <td class="border border-gray-600 px-4 py2 font-mono">10</td>
-              <td class="border border-gray-600 px-4 py2 font-mono">1961</td>
+              <td class="border border-gray-600 px-4 py2 font-mono text-sm">
+                Text
+              </td>
+              <td class="border border-gray-600 px-4 py2 font-mono text-sm">
+                10
+              </td>
+              <td class="border border-gray-600 px-4 py2 font-mono text-sm">
+                1961
+              </td>
             </tr>
             <tr>
-              <td class="border border-gray-600 px-4 py2 font-mono">text</td>
-              <td class="border border-gray-600 px-4 py2 font-mono">10</td>
-              <td class="border border-gray-600 px-4 py2 font-mono">1972</td>
+              <td class="border border-gray-600 px-4 py2 font-mono text-sm">
+                text
+              </td>
+              <td class="border border-gray-600 px-4 py2 font-mono text-sm">
+                10
+              </td>
+              <td class="border border-gray-600 px-4 py2 font-mono text-sm">
+                1972
+              </td>
             </tr>
             <tr>
-              <td class="border border-gray-600 px-4 py2 font-mono">Text</td>
-              <td class="border border-gray-600 px-4 py2 font-mono">10</td>
-              <td class="border border-gray-600 px-4 py2 font-mono">1975</td>
+              <td class="border border-gray-600 px-4 py2 font-mono text-sm">
+                Text
+              </td>
+              <td class="border border-gray-600 px-4 py2 font-mono text-sm">
+                10
+              </td>
+              <td class="border border-gray-600 px-4 py2 font-mono text-sm">
+                1975
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="expenses_info mx-5 text-center m-10">
+        <h2 class="text-white font-mono text-lg">Expense Breakdown Table</h2>
+
+        <button
+          class="compare_expense text-white border-2-yellow bg-blue-500 p-1 px-1.5 rounded-md m-3"
+        >
+          Compare Expenses
+        </button>
+      </div>
+      <div
+        class="table_conpare_container mx-5 pb-10 xs:block text-center flex justify-center"
+      >
+        <table class="table-auto bg-white border-gray-400 block">
+          <thead>
+            <tr>
+              <th class="border border-gray-600 px-2 py2 font-mono text-sm">
+                Category Name
+              </th>
+              <th class="border border-gray-600 px-2 py2 font-mono text-sm">
+                Week 1
+              </th>
+              <th class="border border-gray-600 px-2 py2 font-mono text-sm">
+                Week 2
+              </th>
+              <th class="border border-gray-600 px-2 py2 font-mono text-sm">
+                Change
+              </th>
+            </tr>
+          </thead>
+          <tbody class="border border-gray-600 px-4 py2 hidden">
+            <tr>
+              <td class="border border-gray-600 px-4 py2 font-mono text-sm">
+                Text
+              </td>
+              <td class="border border-gray-600 px-4 py2 font-mono text-sm">
+                10
+              </td>
+              <td class="border border-gray-600 px-4 py2 font-mono text-sm">
+                1961
+              </td>
+              <td class="border border-gray-600 px-4 py2 font-mono text-sm">
+                Decrese
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-600 px-4 py2 font-mono text-sma">
+                text
+              </td>
+              <td class="border border-gray-600 px-4 py2 font-mono text-sm">
+                10
+              </td>
+              <td class="border border-gray-600 px-4 py2 font-mono text-sm">
+                1972
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-600 px-4 py2 font-mono text-sma">
+                Total
+              </td>
+              <td class="border border-gray-600 px-4 py2 font-mono text-sm">
+                10
+              </td>
+              <td class="border border-gray-600 px-4 py2 font-mono text-sm">
+                1975
+              </td>
             </tr>
           </tbody>
         </table>

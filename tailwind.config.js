@@ -4,14 +4,14 @@ module.exports = {
   content: ['./docs/**/*.{html,js}'],
   theme: {
     screens: {
-      xs: '300px',
-      sm: '301px',
+      xs: '200px',
+      sm: '300px',
       md: '768px',
       lg: '1024px',
       xl: '1280px',
       '2xl': '1536px',
       '3xl': '2000px',
-      '4xl': '2600px', // ← missing px here
+      '4xl': '2600px',
     },
     fontSize: {
       sm: ['7px', '10px'],
