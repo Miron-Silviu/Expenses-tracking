@@ -7,4 +7,12 @@ const clearButton = document.querySelector('.clear_all');
 const rowCategoriesBtn = document.querySelector('.row_categories');
 const categoriesTable = document.querySelector('.categories_table_body');
 
-rowCategoriesBtn.addEventListener('click', function () {});
+// Implement functionality row categories button
+rowCategoriesBtn.addEventListener('click', function () {
+  inputNumber.value;
+});
+
+// implement functionality for clear button
+clearButton.addEventListener('click', function () {
+  inputNumber.value = '';
+});
