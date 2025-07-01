@@ -9,7 +9,11 @@ const categoriesTable = document.querySelector('.categories_table_body');
 
 // Implement functionality row categories button
 rowCategoriesBtn.addEventListener('click', function () {
-  inputNumber.value;
+  if (inputNumber.value == 0) {
+    prompt('Please add a number grater than 0');
+  } else {
+    inputNumber.value;
+  }
 });
 
 // implement functionality for clear button
