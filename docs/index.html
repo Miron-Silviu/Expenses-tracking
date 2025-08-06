@@ -9,53 +9,46 @@
     <title>Document</title>
   </head>
   <body class="bg-lime-200">
-    <div class="main_container m-10 bg-black min-h-screen">
-      <div class="container h-auto text-center">
-        <header class="text-center h-auto">
-          <h1 class="text-white font-mono text-xl p-5">
-            Weekly Expense Tracker
-          </h1>
-        </header>
-      </div>
+    <div class="main_container m-10 bg-black min-h-screen flex flex-col">
+      <header class="text-center h-auto w-full">
+        <h1 class="text-white font-mono text-xl p-5">Weekly Expense Tracker</h1>
+      </header>
       <div
-        class="button_input_container my-10 mx-5 p-3 flex justify-between gap-2 xs:block"
-      >
-        <input
+        class="button_input_container my-10 mx-5 p-3 flex justify-between gap-2 xs:block">
+        <!-- <input
           id="number"
           type="number"
           class="input_number rounded-md w-28 border-2 font-mono"
           placeholder="Add Number"
-        />
+        /> -->
         <button
           type="button"
-          class="clear_all text-white border-2-yellow-500 b-2 px-4 rounded-md bg-yellow-500 font-mono xs:block"
-        >
+          class="clear_all text-white border-2-yellow-500 b-2 px-4 rounded-md bg-yellow-500 font-mono xs:block">
           Clear All
         </button>
       </div>
       <div class="categories_row_button text-center mx-5 py-2">
-        <button
+        <!-- <button
           class="row_categories text-white border-2-yellow bg-yellow-500 p-1 px-1.5 rounded-md"
         >
           + Add Categories Row
-        </button>
+        </button> -->
         <h2 class="text-white font-mono text-lg">Enter Categories Name</h2>
       </div>
 
       <div
-        class="table_container mx-5 xs:block text-center flex justify-center"
-      >
-        <table class="table-auto bg-white border-gray-400 block re">
+        class="table_container bg-black mx-5 text-center flex justify-evenly">
+        <table class="table-auto bg-white border-gray-400">
           <thead>
             <tr>
-              <th class="border border-gray-600 px-4 py-2 font-mono text-sm">
-                category name
+              <th class="border border-gray-600 px-4 py-2 font-mono text-base">
+                Category Name
               </th>
-              <th class="border border-gray-600 px-4 py-2 font-mono text-sm">
-                week 1
+              <th class="border border-gray-600 px-4 py-2 font-mono text-md">
+                Week 1
               </th>
-              <th class="border border-gray-600 px-4 py-2 font-mono text-sm">
-                week2
+              <th class="border border-gray-600 px-4 py-2 font-mono text-md">
+                Week2
               </th>
             </tr>
           </thead>
@@ -63,36 +56,45 @@
             <tr class="boder-8">
               <td
                 contenteditable="true"
-                class="tabel_data border-gray-00 px-4 py-2 font-mono text-sm"
-              ></td>
+                class="tabel_data border-gray-00 px-4 py-2 font-mono text-sm"></td>
               <td
                 contenteditable="true"
-                class="tabel_data border border-gray-600 px-4 py-2 font-mono text-sm"
-              ></td>
+                class="tabel_data border border-gray-600 px-4 py-2 font-mono text-sm"></td>
               <td
                 contenteditable="true"
-                class="tabel_data border border-gray-600 px-4 py-2 font-mono text-sm"
-              ></td>
+                class="tabel_data border border-gray-600 px-4 py-2 font-mono text-sm"></td>
             </tr>
             <tr>
-              <td class="border border-gray-600 px-4 py-2 font-mono text-sm">
+              <td
+                contenteditable="true"
+                class="border border-gray-600 px-4 py-2 font-mono text-base">
                 text
               </td>
-              <td class="border border-gray-600 px-4 py-2 font-mono text-sm">
+              <td
+                contenteditable="true"
+                class="border border-gray-600 px-4 py-2 font-mono text-base">
                 10
               </td>
-              <td class="border border-gray-600 px-4 py-2 font-mono text-sm">
+              <td
+                contenteditable="true"
+                class="border border-gray-600 px-4 py-2 font-mono text-base">
                 1972
               </td>
             </tr>
             <tr>
-              <td class="border border-gray-600 px-4 py-2 font-mono text-sm">
+              <td
+                contenteditable="true"
+                class="border border-gray-600 px-4 py-2 font-mono text-base">
                 text
               </td>
-              <td class="border border-gray-600 px-4 py-2 font-mono text-sm">
+              <td
+                contenteditable="true"
+                class="border border-gray-600 px-4 py-2 font-mono text-base">
                 10
               </td>
-              <td class="border border-gray-600 px-4 py-2 font-mono text-sm">
+              <td
+                contenteditable="true"
+                class="border border-gray-600 px-4 py-2 font-mono text-base">
                 1975
               </td>
             </tr>
@@ -101,53 +103,46 @@
       </div>
       <div class="expenses_info mx-5 text-center m-10">
         <h2 class="text-white font-mono text-lg">Expense Breakdown Table</h2>
-
-        <button
-          class="compare_expense text-white border-2-yellow bg-blue-500 p-1 px-1.5 rounded-md m-3"
-        >
-          Compare Expenses
-        </button>
       </div>
       <div
-        class="table_conpare_container mx-5 pb-10 xs:block text-center flex justify-center"
-      >
+        class="table_conpare_container mx-5 pb-10 text-center flex justify-center">
         <table class="table-auto bg-white border-gray-400 block">
           <thead>
             <tr>
-              <th class="border border-gray-600 px-2 py-2 font-mono text-sm">
+              <th class="border border-gray-600 px-2 py-2 font-mono text-base">
                 Category Name
               </th>
-              <th class="border border-gray-600 px-2 py-2 font-mono text-sm">
+              <th class="border border-gray-600 px-2 py-2 font-mono text-base">
                 Week 1
               </th>
-              <th class="border border-gray-600 px-2 py-2 font-mono text-sm">
+              <th class="border border-gray-600 px-2 py-2 font-mono text-base">
                 Week 2
               </th>
-              <th class="border border-gray-600 px-2 py-2 font-mono text-sm">
+              <th class="border border-gray-600 px-2 py-2 font-mono text-base">
                 Change
               </th>
             </tr>
           </thead>
-          <tbody class="border border-gray-600 px-4 py-2 hidden">
+          <tbody class="border border-gray-600 px-4 py-2">
             <tr>
-              <td class="border border-gray-600 px-4 py-2 font-mono text-sm">
+              <td class="border border-gray-600 px-4 py-2 font-mono text-base">
                 Text
               </td>
-              <td class="border border-gray-600 px-4 py-2 font-mono text-sm">
+              <td class="border border-gray-600 px-4 py-2 font-mono text-base">
                 10
               </td>
-              <td class="border border-gray-600 px-4 py-2 font-mono text-sm">
+              <td class="border border-gray-600 px-4 py-2 font-mono text-base">
                 1961
               </td>
-              <td class="border border-gray-600 px-4 py-2 font-mono text-sm">
+              <td class="border border-gray-600 px-4 py-2 font-mono text-base">
                 Decrese
               </td>
             </tr>
             <tr>
-              <td class="border border-gray-600 px-4 py-2 font-mono text-sma">
+              <td class="border border-gray-600 px-4 py-2 font-mono text-base">
                 text
               </td>
-              <td class="border border-gray-600 px-4 py-2 font-mono text-sm">
+              <td class="border border-gray-600 px-4 py-2 font-mono text-base">
                 10
               </td>
               <td class="border border-gray-600 px-4 py-2 font-mono text-sm">
@@ -167,6 +162,12 @@
             </tr>
           </tbody>
         </table>
+      </div>
+      <div class="compare_expenses_button flex pb-10 d-flex justify-center">
+        <button
+          class="compare_expense text-white border-2-yellow bg-blue-500 p-1 px-1.5 rounded-md m-3">
+          Compare Expenses
+        </button>
       </div>
     </div>
     <script src="/script.js"></script>
